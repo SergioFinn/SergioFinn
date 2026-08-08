@@ -209,16 +209,16 @@
             color: #666;
             margin-top: 1rem;
         }
-.equipo {
+          .equipo {
     text-align: center;
     margin: 2rem 0; /* Corrección del espacio */
 }
 
-.equipo img {
-    width: 100%;
-    max-width: 1000px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            .equipo img {
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
         
         
@@ -276,7 +276,33 @@
             color: #777;
             text-transform: uppercase;
         }
+/* Caja de texto destacado */
+.texto-destacado {
+    background-color: #ffffff; /* Fondo blanco */
+    border-left: 5px solid #e2b007; /* Línea lateral dorada */
+    padding: 1.2rem 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 800px; /* Ancho cómodo para lectura */
+    border-radius: 0 8px 8px 0; /* Bordes redondeados del lado derecho */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: left; /* Alineación del texto interno */
+}
 
+/* Título o frase principal */
+.texto-destacado h3 {
+    color: #1b3b22; /* Verde oscuro */
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Cuerpo del mensaje */
+.texto-destacado p {
+    color: #444444;
+    font-size: 1rem;
+    line-height: 1.5;
+}
         /* Pie de página */
         footer {
             background-color: var(--verde-oscuro);
@@ -298,7 +324,27 @@
             }
             .nav-links {
                 display: none; /* Se simplifica para vista móvil */
+
+        
             }
+        /* Contenedor que centra la imagen */
+.jugador-destacado {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    width: 100%;             /* Ocupa el ancho disponible */
+    margin: 2rem 0;          /* Espaciado arriba y abajo */
+}
+
+/* Reglas para que la imagen se vea completa */
+.jugador-destacado img {
+    max-width: 100%;         /* Evita que se salga de la pantalla en celulares */
+    max-height: 80vh;        /* Asegura que no sobrepase el alto de la pantalla */
+    height: auto;            /* Mantiene la proporción original (no la deforma) */
+    object-fit: contain;     /* Muestra la imagen COMPLETA sin recortar */
+    border-radius: 12px;     /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Sombra suave opcional */
+}
         }
     </style>
 </head>
@@ -390,7 +436,31 @@
                     <div class="player-pos">Defensa Central</div>
                 </div>
             </div>
-
+<section class="seccion-capitan">
+    <!-- Imagen del capitán centrada -->
+    <img src="image_d514fe2d.jpg" alt="Capitán de los Aguacateros de Zumpango">
+    
+    <!-- Bloque de texto destacado para la porra -->
+    <div class="texto-destacado">
+        <h3>Porra oficial del equipo</h3>
+        <p>
+            ¡Se menea, se menea!<br>
+            ¡La tribuna ya calienta la pelea!<br>
+            Desde el cerro hasta la hermosa laguna,<br>
+            ¡como esta afición no hay ninguna!<br><br>
+            <em>(A coro fuerte y con saltos)</em><br>
+            ¡Con el verde en la piel y el oro en las manos!<br>
+            ¡Aquí mandan los de Zumpango!<br><br>
+            Traemos el sabor, traemos la pasión,<br>
+            ¡el Aguacatero va a salir campeón!<br>
+            ¡Pongan huevo, pongan garra y corazón!<br>
+            ¡Que se escuche con fuerza nuestra voz!<br><br>
+            <strong>¡AGUACATEROS!</strong> 👏 👏<br>
+            <strong>¡AGUACATEROS!</strong> 👏 👏<br>
+            ¡Sabor, orgullo y pasión!
+        </p>
+    </div>
+</section>
         </div>
 
     </div>
