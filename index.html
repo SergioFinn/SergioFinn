@@ -282,32 +282,48 @@
             color: #777;
             text-transform: uppercase;
         }
-/* Caja de texto destacado */
+/* Contenedor principal centrado */
+.seccion-capitan {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos uno debajo de otro */
+    align-items: center;     /* Centra horizontalmente todo el contenido (imagen y porra) */
+    justify-content: center;
+    margin: 2rem auto;      /* Centra la sección en la página y da margen arriba/abajo */
+    max-width: 700px;       /* Ancho del contenedor para que todo mantenga la misma simetría */
+    padding: 0 1rem;
+    text-align: center;     /* Asegura que el texto interno también esté centrado */
+}
+
+/* Imagen a escala y centrada */
+.seccion-capitan img {
+    max-width: 350px;       /* Tamaño a escala cómodo para la foto */
+    width: 100%;
+    height: auto;           /* Mantiene la proporción sin deformar */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1.5rem;  /* Separa la foto del cuadro de la porra */
+}
+
+/* Tarjeta de la porra centrada */
 .texto-destacado {
-    background-color: #ffffff; /* Fondo blanco */
-    border-left: 5px solid #1b3b22; /* Línea lateral dorada */
-    padding: 1.2rem 1.5rem;
-    margin: 1.5rem auto;
-    max-width: 800px; /* Ancho cómodo para lectura */
-    border-radius: 0 8px 8px 0; /* Bordes redondeados del lado derecho */
+    background-color: #ffffff;
+    border-top: 5px solid #e2b007; /* Línea dorada superior para acentuar el diseño centrado */
+    padding: 1.5rem 2rem;
+    width: 100%;                   /* Se ajusta al ancho del contenedor (700px) */
+    border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    text-align: center; /* Alineación del texto interno */
 }
 
-/* Título o frase principal */
 .texto-destacado h3 {
-    color: #e2b007; /* Verde oscuro */
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
+    color: #1b3b22;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
 }
 
-/* Cuerpo del mensaje */
 .texto-destacado p {
-    color: #444444;
-    font-size: 1rem;
-    line-height: 1.5;
+    color: #333333;
+    line-height: 1.6;
 }
         /* Pie de página */
         footer {
