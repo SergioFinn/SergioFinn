@@ -220,7 +220,13 @@
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-        
+        .seccion-capitan img {
+    width: 100%;         /* Se adapta en pantallas muy chicas */
+    max-width: 350px;    /* Establece el tamaño máximo fijo (ej. 300px, 350px, 400px) */
+    height: auto;        /* Mantiene la escala sin deformar */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
         
         /* Plantilla de Jugadores */
         .roster-grid {
@@ -279,18 +285,18 @@
 /* Caja de texto destacado */
 .texto-destacado {
     background-color: #ffffff; /* Fondo blanco */
-    border-left: 5px solid #e2b007; /* Línea lateral dorada */
+    border-left: 5px solid #1b3b22; /* Línea lateral dorada */
     padding: 1.2rem 1.5rem;
     margin: 1.5rem auto;
     max-width: 800px; /* Ancho cómodo para lectura */
     border-radius: 0 8px 8px 0; /* Bordes redondeados del lado derecho */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    text-align: left; /* Alineación del texto interno */
+    text-align: center; /* Alineación del texto interno */
 }
 
 /* Título o frase principal */
 .texto-destacado h3 {
-    color: #1b3b22; /* Verde oscuro */
+    color: #e2b007; /* Verde oscuro */
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
